@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SAVA · Báo cáo KD & SP Tuần 24/8–30/8</title><style>body{font-family:Arial,sans-serif;margin:0;display:grid;place-items:center;min-height:100vh;background:#f5f7fb;color:#03041c}.box{padding:24px;text-align:center}.err{color:#b42318;white-space:pre-wrap}</style></head><body><div class="box" id="status">Đang tải báo cáo…</div><script>
+(async()=>{
+ const m=await (await fetch('manifest.json',{cache:'no-store'})).json();
+ const read=async a=>(await Promise.all(a.map(async p=>{const r=await fetch(p,{cache:'force-cache'});if(!r.ok)throw new Error(p+' '+r.status);return r.text()}))).join('');
+ let html=await read(m.template_parts);
+ for(const im of m.images){html=html.split(im.token).join(await read(im.parts));}
+ document.open();document.write(html);document.close();
+})().catch(e=>{document.getElementById('status').className='err';document.getElementById('status').textContent='Không tải được báo cáo: '+e.message});
+</script></body></html>
