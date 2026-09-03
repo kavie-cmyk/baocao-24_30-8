@@ -1,0 +1,70 @@
+{
+  "source_sha256": "5cb59c9f0302033b67b2bc3e8eea26a0c2d508c50df8e0a08db5448540494317",
+  "template_parts": [
+    "parts/template_000.txt",
+    "parts/template_001.txt",
+    "parts/template_002.txt"
+  ],
+  "images": [
+    {
+      "token": "__SAVA_DATAURI_0__",
+      "parts": [
+        "parts/img0_000.txt",
+        "parts/img0_001.txt"
+      ]
+    },
+    {
+      "token": "__SAVA_DATAURI_1__",
+      "parts": [
+        "parts/img1_000.txt",
+        "parts/img1_001.txt",
+        "parts/img1_002.txt",
+        "parts/img1_003.txt",
+        "parts/img1_004.txt",
+        "parts/img1_005.txt"
+      ]
+    },
+    {
+      "token": "__SAVA_DATAURI_2__",
+      "parts": [
+        "parts/img2_000.txt",
+        "parts/img2_001.txt",
+        "parts/img2_002.txt",
+        "parts/img2_003.txt",
+        "parts/img2_004.txt"
+      ]
+    },
+    {
+      "token": "__SAVA_DATAURI_3__",
+      "parts": [
+        "parts/img3_000.txt",
+        "parts/img3_001.txt",
+        "parts/img3_002.txt",
+        "parts/img3_003.txt",
+        "parts/img3_004.txt",
+        "parts/img3_005.txt"
+      ]
+    },
+    {
+      "token": "__SAVA_DATAURI_4__",
+      "parts": [
+        "parts/img4_000.txt",
+        "parts/img4_001.txt",
+        "parts/img4_002.txt",
+        "parts/img4_003.txt",
+        "parts/img4_004.txt",
+        "parts/img4_005.txt"
+      ]
+    },
+    {
+      "token": "__SAVA_DATAURI_5__",
+      "parts": [
+        "parts/img5_000.txt",
+        "parts/img5_001.txt",
+        "parts/img5_002.txt",
+        "parts/img5_003.txt",
+        "parts/img5_004.txt"
+      ]
+    }
+  ]
+}
